@@ -11,6 +11,7 @@ import requests
 from pygame import mixer
 import urllib.request
 import urllib.parse
+import json
 import bs4
 
 
@@ -146,6 +147,20 @@ def tars(command):
                 "http://www.youtube.com/watch?v={}".format(search_results[0])
             )
             pass
+    #  weather forecast in your city (e.g. weather in London)
+    # please create and use your own API it is free
+    elif "weather in" in command:
+        city = command.split("in", 1)[1]   
+        #openweathermap API
+        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=your_api_key&units=metric'.format(city)
+        response = requests.get(url)
+        data = response.json()
+        #print(data)
+        temp = data['main']['temp']
+        round_temp = int(round(temp))
+        talk('It is {} degree celcius in {}'.format(round_temp, city))
+        time.sleep(3)
+
 
     elif "hello" in command:
         talk("Hello! I am TARS. How can I help you?")
