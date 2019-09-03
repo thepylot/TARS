@@ -125,11 +125,7 @@ def tars(command):
                 mixer.init()
                 mixer.music.load("speech.mp3")
                 mixer.music.play()
-<<<<<<< HEAD
     elif 'stop' in command:
-=======
-    elif "stop" in command:
->>>>>>> c1facded2fe82e6f016655a9d64c22c43a0583e8
         mixer.music.stop()
 
     # Search videos on Youtube and play (e.g. Search in youtube believer)
