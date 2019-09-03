@@ -128,7 +128,7 @@ def tars(command):
                 myobj.save(mp3name)
                 mixer.init()
                 mixer.music.load("speech.mp3")
-               while mixer.music.play()
+                mixer.music.play()
     elif 'stop' in command:
         mixer.music.stop()
                 
