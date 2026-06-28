@@ -1,6 +1,6 @@
 # TARS
 
-TARS can help you to automate your tasks such as search videos in YouTube and play them, send emails, open websites, search materials in Wikipedia and read them,inform weather forecast in your country, greetings and more.
+TARS can help you automate your tasks. It can search for videos on YouTube and play them, send emails, open websites, search for Wikipedia articles and read them, get the weather forecast in your country, greetings and more.
 
 ## Getting Started
 
